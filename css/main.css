@@ -3,9 +3,6 @@
  *
  */
 
- @import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
- @import url('https://fonts.googleapis.com/css?family=Lobster+Two');
-
 
 
 /* Remove or modify unnecessary Bootstrap 3 styling. */
@@ -31,8 +28,7 @@ h3              { margin-top: 0; }
 
 
 
-
-
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
 
 
 *    { margin: 0; padding: 0; }
