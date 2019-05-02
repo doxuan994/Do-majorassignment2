@@ -1,0 +1,200 @@
+/*!
+ * Author: Xuan Do
+ *
+ */
+
+/* Remove or modify unnecessary Bootstrap 3 styling. */
+.row            { margin-left: 0; margin-right: 0; }
+blockquote      { border-left: 0; }
+p               { margin-bottom: 0; }
+h3              { margin-top: 0; }
+.navbar         { margin-bottom: 0; border: 0; }
+.navbar-default { background-color: #1D2124; }
+#navbar         { padding-left: 0; padding-right: 0; }
+.jumbotron      { background-color: #fafafa; }
+.panel          { margin-bottom: 0; }
+.panel-default  {
+    border: 0px;
+    border-left: 6px solid #1D2124;
+}
+.container-fluid { padding-right: 0px; padding-left: 0px; }
+.col-lg-6        { padding-right: 0px; padding-left: 0px; }
+.col-lg-5        { padding-right: 0px; padding-left: 0px; }
+.col-md-4        { padding-right: 0px; padding-left: 0px; }
+/* Remove transparency from bootstrap tooltip. */
+.tooltip.in { opacity: 1 !important; }
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two');
+
+
+*    { margin: 0; padding: 0; }
+html { font-size: 16px; }
+
+/* Full height viewport. */
+body { height: 100vh; }
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 4px;
+}
+img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+a  { text-decoration: none !important; }
+q, blockquote  {
+    font-family: 'Lobster Two', cursive;
+    font-style: italic;
+}
+ul { list-style: none; }
+h3 { font-size: 2em; font-weight: 900; }
+cite
+{
+    padding: 10px 20px;
+    margin: 0 0 20px;
+}
+.no-float { float: none; }
+
+
+
+
+
+
+
+
+/* -----------------------------------------------------------------------------
+Responsive Web Design Media Queries.
+BREAKPOINTS
+----------------------------------------------------------------------------- */
+/* Large devices (large desktops, 1200px and up). */
+@media only screen and (min-width: 1200px) {
+    /* Full height window by using CSS Flexbox Layout. */
+    .flex-full-height {
+        display: flex;
+        height: auto;
+        min-height : 100%;
+        justify-content: center;
+    }
+    /*--------------------------------------------------------------------------
+    HEADER
+    --------------------------------------------------------------------------*/
+    #header {
+        background-color: white;
+        background-image: url("../img/background-content-header.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100%;
+    }
+    /*--------------------------------------------------------------------------
+    MAIN
+    --------------------------------------------------------------------------*/
+    .rightSide   { padding: 2em; }
+    .leftSide    { padding: 2em; }
+    .leftSide li { margin: 1em 0; }
+    /* This is used for the scrolling effect. */
+    .affix { top: 2em; z-index: 9999 !important; }
+    /* Tools I used to create the game. */
+    .gimp-box             { background-color: #fafafa; padding: 3em; }
+    .gimp-box:first-child { margin-bottom: 1em; }
+    .gimp-info            { border-left: 10px solid #1D2124; }
+}
+
+/* Medium devices (desktops, 992px and up). */
+/* @media only screen and (min-width: 992px) {} */
+
+/* Small devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .paddingBottom { padding-bottom: 1em; }
+    .paddingLeft  { padding-left: 0.5em; }
+    .paddingRight { padding-right: 0.5em; }
+}
+
+/* Extra small devices (phones, less than 768px) */
+@media only screen and (max-width: 768px) {
+    .paddingBottom { padding-bottom: 1em; }
+}
+
+/*------------------------------------------------------------------------------
+MAIN
+------------------------------------------------------------------------------*/
+.site-content { background-color: #1D2124; }
+.leftSide     { background-color: #1D2124; }
+.rightSide    { background-color: #FFC924; }
+
+/* Styling for DIVs of the main content. */
+/* BIGGEST DIVS
+------------------------------------------------------------------------------*/
+.rightSide { padding: 1.4em; }
+.leftSide a {
+    padding: 0.5em;
+    font-weight: bold;
+    color: white;
+    transition: all 1s ease-in-out;
+}
+.leftSide a:hover {
+    color: black;
+    background-color: #eee;
+}
+/* SUB DIVS
+------------------------------------------------------------------------------*/
+.inner       { padding: 2em 0; }
+.inner-child { padding: 1em 0; }
+.inner-child h4, .inner-child p { text-align: center; }
+
+
+/*------------------------------------------------------------------------------
+FOOTER
+------------------------------------------------------------------------------*/
+#footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+#footer a { color: white; }
+
+
+
+
+
+
+/*------------------------------------------------------------------------------
+Styling for COMPONENTS
+------------------------------------------------------------------------------*/
+.unrealengine       { color: black; }
+.unrealengine:hover { color: black; }
+.gimp               { color: darkslategray; }
+.gimp:hover         { color: darkslategray; }
+#adobe              { color: brown; }
+
+#adobe, .unrealengine, .gimp {
+    font-size: 1.6em;
+    font-weight: 900;
+    transition: all 0.5s ease-in-out;
+}
+
+
+
+.tooltip-rock + .tooltip > .tooltip-inner { background-color: #452E24; }
+.tooltip-rock + .tooltip > .tooltip-arrow { border-top-color: #452E24; }
+
+.tooltip-fire + .tooltip > .tooltip-inner { background-color: #2F3622; }
+.tooltip-fire + .tooltip > .tooltip-arrow { border-top-color: #2F3622; }
+
+.tooltip-snow + .tooltip > .tooltip-inner { background-color: #152731; }
+.tooltip-snow + .tooltip > .tooltip-arrow { border-top-color: #152731; }
+
+
+
+/* Characters */
+#rock, #fire, #snow { width: 100%; }
+#rock { background-color: #452E24; }
+#fire { background-color: #2F3622; }
+#snow { background-color: #152731; }
