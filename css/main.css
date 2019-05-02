@@ -157,6 +157,7 @@ FOOTER
     color: white;
     text-align: center;
     align-items: center;
+    padding: 1em 0;
 }
 #footer a { color: white; }
 
