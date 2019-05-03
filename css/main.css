@@ -54,7 +54,7 @@ q, blockquote  {
     font-style: italic;
 }
 ul { list-style: none; }
-h3 { font-size: 2em; font-weight: 900; }
+h3 { font-size: 2em; font-weight: 900; text-transform: uppercase; }
 cite
 {
     padding: 10px 20px;
@@ -114,14 +114,17 @@ BREAKPOINTS
 
 /* Small devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    .rightSide   { padding: 1em; }
+    .rightSide     { padding: 1em; }
     .paddingBottom { padding-bottom: 1em; }
-    .paddingLeft  { padding-left: 0.5em; }
-    .paddingRight { padding-right: 0.5em; }
+    .paddingLeft   { padding-left: 0.5em; }
+    .paddingRight  { padding-right: 0.5em; }
 }
 
 /* Extra small devices (phones, less than 768px) */
 @media only screen and (max-width: 768px) {
+    body { text-align: center; }
+    h3   { padding-top: 1em; padding-bottom: 1em; font-size: 1.5em; }
+
     .paddingBottom { padding-bottom: 1em; }
 }
 
@@ -173,11 +176,11 @@ FOOTER
 /*------------------------------------------------------------------------------
 Styling for COMPONENTS
 ------------------------------------------------------------------------------*/
-.unrealengine       { color: black; }
+.unrealengine       { color: #333 !important; }
 .unrealengine:hover { color: black; }
-.gimp               { color: darkslategray; }
+.gimp               { color: darkslategray !important;; }
 .gimp:hover         { color: darkslategray; }
-#adobe              { color: brown; }
+#adobe              { color: brown !important;; }
 
 #adobe, .unrealengine, .gimp {
     font-size: 1.6em;

@@ -9,6 +9,8 @@
 #level-timeline {
     max-width: 760px;
     margin: auto;
+    margin-right: 2em;
+    margin-left: 2em;
 }
 
 #level-timeline p {
