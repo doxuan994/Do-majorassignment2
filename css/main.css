@@ -9,7 +9,7 @@
 .row            { margin-left: 0; margin-right: 0; }
 blockquote      { border-left: 0; }
 p               { margin-bottom: 0; }
-h3              { margin-top: 0; }
+h3              { margin-top: 10px; margin-bottom: 10px; }
 .navbar         { margin-bottom: 0; border: 0; }
 .navbar-default { background-color: #1D2124; }
 #navbar         { padding-left: 0; padding-right: 0; }
@@ -23,6 +23,7 @@ h3              { margin-top: 0; }
 .col-lg-6        { padding-right: 0px; padding-left: 0px; }
 .col-lg-5        { padding-right: 0px; padding-left: 0px; }
 .col-md-4        { padding-right: 0px; padding-left: 0px; }
+.col-sm-9        { padding-right: 0px; padding-left: 0px; }
 /* Remove transparency from bootstrap tooltip. */
 .tooltip.in { opacity: 1 !important; }
 
@@ -32,7 +33,6 @@ h3              { margin-top: 0; }
 
 
 *    { margin: 0; padding: 0; }
-html { font-size: 16px; }
 
 /* Full height viewport. */
 body { height: 100vh; }
@@ -74,6 +74,9 @@ BREAKPOINTS
 ----------------------------------------------------------------------------- */
 /* Large devices (large desktops, 1200px and up). */
 @media only screen and (min-width: 1200px) {
+    body {
+        font-size: 18px;
+    }
     /* Full height window by using CSS Flexbox Layout. */
     .flex-full-height {
         display: flex;
@@ -95,8 +98,7 @@ BREAKPOINTS
     /*--------------------------------------------------------------------------
     MAIN
     --------------------------------------------------------------------------*/
-    .rightSide   { padding: 2em; }
-    .leftSide    { padding: 2em; }
+    .leftSide    { padding: 15px; }
     .leftSide li { margin: 1em 0; }
     /* This is used for the scrolling effect. */
     .affix { top: 2em; z-index: 9999 !important; }
@@ -131,7 +133,8 @@ MAIN
 /* Styling for DIVs of the main content. */
 /* BIGGEST DIVS
 ------------------------------------------------------------------------------*/
-.rightSide { padding: 1.4em; }
+.rightSide   { padding: 1em; }
+.leftSide li { margin: 1em 0; }
 .leftSide a {
     padding: 0.5em;
     font-weight: bold;
@@ -157,7 +160,7 @@ FOOTER
     color: white;
     text-align: center;
     align-items: center;
-    padding: 1em 0;
+    padding: 10em 0;
 }
 #footer a { color: white; }
 
