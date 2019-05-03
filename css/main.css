@@ -20,6 +20,7 @@ h3              { margin-top: 10px; margin-bottom: 10px; }
     border-left: 6px solid #1D2124;
 }
 .container-fluid { padding-right: 0px; padding-left: 0px; }
+.col-lg-9        { padding-right: 0px; padding-left: 0px; }
 .col-lg-6        { padding-right: 0px; padding-left: 0px; }
 .col-lg-5        { padding-right: 0px; padding-left: 0px; }
 .col-md-4        { padding-right: 0px; padding-left: 0px; }
@@ -113,6 +114,7 @@ BREAKPOINTS
 
 /* Small devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+    .rightSide   { padding: 1em; }
     .paddingBottom { padding-bottom: 1em; }
     .paddingLeft  { padding-left: 0.5em; }
     .paddingRight { padding-right: 0.5em; }
@@ -133,7 +135,6 @@ MAIN
 /* Styling for DIVs of the main content. */
 /* BIGGEST DIVS
 ------------------------------------------------------------------------------*/
-.rightSide   { padding: 1em; }
 .leftSide li { margin: 1em 0; }
 .leftSide a {
     padding: 0.5em;
