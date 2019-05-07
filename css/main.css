@@ -128,9 +128,9 @@ Styling for COMPONENTS
 
 
 
-.tooltip-rock { color: #1B2124; font-weight: bold; }
-.tooltip-fire { color: #74191E; font-weight: bold; }
-.tooltip-snow { color: #152731; font-weight: bold; }
+.tooltip-rock { color: #1B2124; font-weight: bold; white-space: nowrap; }
+.tooltip-fire { color: #74191E; font-weight: bold; white-space: nowrap; }
+.tooltip-snow { color: #152731; font-weight: bold; white-space: nowrap; }
 
 .tooltip-rock + .tooltip > .tooltip-inner { background-color: #452E24; }
 .tooltip-rock + .tooltip > .tooltip-arrow { border-top-color: #452E24; }
