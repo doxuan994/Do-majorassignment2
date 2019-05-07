@@ -95,7 +95,7 @@ MAIN
 }
 /* SUB DIVS
 ------------------------------------------------------------------------------*/
-.inner           { padding: 2em; }
+.inner           { padding: 1em; }
 .inner-noPadding { padding: 0; }
 .inner-child h4, .inner-child p { text-align: center; }
 
@@ -178,8 +178,11 @@ BREAKPOINTS
     --------------------------------------------------------------------------*/
     .leftSide    { padding: 15px; }
     .leftSide li { margin: 1em 0; }
+    .inner       { padding: 2em; }
     /* This is used for the scrolling effect. */
     .affix { top: 2em; z-index: 9999 !important; }
+
+
     /* Tools I used to create the game. */
     .gimp-box             { background-color: #fafafa; padding: 3em; }
     .gimp-box:first-child { margin-bottom: 1em; }
