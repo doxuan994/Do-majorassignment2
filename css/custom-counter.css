@@ -1,9 +1,8 @@
 /*!
  * Author: Xuan Do
- *
+ * v1.0
  */
 
-@import url('https://fonts.googleapis.com/css?family=BioRhyme+Expanded|Gugi|ZCOOL+KuaiLe');
 .custom-counter {
     margin: 0;
     padding: 0;
@@ -38,9 +37,9 @@
 }
 
 .custom-counter li:nth-child(1) { font-family: 'ZCOOL KuaiLe', cursive; }
-.custom-counter li:nth-child(2) { font-family: 'BioRhyme Expanded', serif; }
+.custom-counter li:nth-child(2) { font-family: 'Sofia', cursive; }
 .custom-counter li:nth-child(3) { font-family: 'Gugi', cursive; }
 
 .custom-counter li:nth-child(1):before { background-color: #1B2124; font-family: 'ZCOOL KuaiLe', cursive; }
-.custom-counter li:nth-child(2):before { background-color: #74191E; font-family: 'BioRhyme Expanded', serif; }
+.custom-counter li:nth-child(2):before { background-color: #74191E; font-family: 'Sofia', cursive; }
 .custom-counter li:nth-child(3):before { background-color: #152731; font-family: 'Gugi', cursive; }

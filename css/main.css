@@ -1,15 +1,13 @@
 /*!
  * Author: Xuan Do
- *
+ * v1.0
  */
-
 
 
 /* Remove or modify unnecessary Bootstrap 3 styling. */
 .row            { margin-left: 0; margin-right: 0; }
 blockquote      { border-left: 0; }
-p               { margin-bottom: 0; }
-h3              { margin-top: 10px; margin-bottom: 10px; }
+h3              { margin-top: 0px; margin-bottom: 0px; }
 .navbar         { margin-bottom: 0; border: 0; }
 .navbar-default { background-color: #1D2124; }
 #navbar         { padding-left: 0; padding-right: 0; }
@@ -21,6 +19,7 @@ h3              { margin-top: 10px; margin-bottom: 10px; }
 }
 .container-fluid { padding-right: 0px; padding-left: 0px; }
 .col-lg-9        { padding-right: 0px; padding-left: 0px; }
+.col-lg-12       { padding-right: 0px; padding-left: 0px; }
 .col-lg-6        { padding-right: 0px; padding-left: 0px; }
 .col-lg-5        { padding-right: 0px; padding-left: 0px; }
 .col-md-4        { padding-right: 0px; padding-left: 0px; }
@@ -29,8 +28,6 @@ h3              { margin-top: 10px; margin-bottom: 10px; }
 .tooltip.in { opacity: 1 !important; }
 
 
-
-@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
 
 
 *    { margin: 0; padding: 0; }
@@ -54,7 +51,9 @@ q, blockquote  {
     font-style: italic;
 }
 ul { list-style: none; }
-h3 { font-size: 2em; font-weight: 900; text-transform: uppercase; }
+h3 { font-size: 2em; font-weight: 900; text-transform: uppercase; padding: 1em; }
+h4 { font-size: 1.8em; }
+h5 { font-size: 1.6em; text-align: center; }
 cite
 {
     padding: 10px 20px;
@@ -64,9 +63,96 @@ cite
 
 
 
+/* Full height window by using CSS Flexbox Layout. */
+.flex-full-height {
+    display: flex;
+    height: auto;
+    min-height : 100%;
+    justify-content: center;
+}
+
+
+/*------------------------------------------------------------------------------
+MAIN
+------------------------------------------------------------------------------*/
+.site-content { background-color: #1D2124; }
+.leftSide     { background-color: #1D2124; }
+.rightSide    { background-color: #FFC924; }
+
+/* Styling for DIVs of the main content. */
+/* BIGGEST DIVS
+------------------------------------------------------------------------------*/
+.leftSide li { margin: 1em 0; }
+.leftSide a {
+    padding: 0.5em;
+    font-weight: bold;
+    color: white;
+    transition: all 1s ease-in-out;
+}
+.leftSide a:hover {
+    color: black;
+    background-color: #eee;
+}
+/* SUB DIVS
+------------------------------------------------------------------------------*/
+.inner           { padding: 2em; }
+.inner-noPadding { padding: 0; }
+.inner-child h4, .inner-child p { text-align: center; }
+
+
+/*------------------------------------------------------------------------------
+FOOTER
+------------------------------------------------------------------------------*/
+#footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+#footer a { color: white; }
+
+
+/*------------------------------------------------------------------------------
+Styling for COMPONENTS
+------------------------------------------------------------------------------*/
+.unrealengine       { color: #333 !important; }
+.unrealengine:hover { color: black; }
+.gimp               { color: darkslategray !important;; }
+.gimp:hover         { color: darkslategray; }
+#adobe              { color: brown !important;; }
+
+#adobe, .unrealengine, .gimp {
+    font-weight: bold;
+    transition: all 0.5s ease-in-out;
+}
 
 
 
+.tooltip-rock { color: #1B2124; font-weight: bold; }
+.tooltip-fire { color: #74191E; font-weight: bold; }
+.tooltip-snow { color: #152731; font-weight: bold; }
+
+.tooltip-rock + .tooltip > .tooltip-inner { background-color: #452E24; }
+.tooltip-rock + .tooltip > .tooltip-arrow { border-top-color: #452E24; }
+
+.tooltip-fire + .tooltip > .tooltip-inner { background-color: #2F3622; }
+.tooltip-fire + .tooltip > .tooltip-arrow { border-top-color: #2F3622; }
+
+.tooltip-snow + .tooltip > .tooltip-inner { background-color: #152731; }
+.tooltip-snow + .tooltip > .tooltip-arrow { border-top-color: #152731; }
+
+
+
+
+
+/* Characters */
+#rock, #fire, #snow { width: 100%; }
+#rock { background-color: #452E24; }
+#fire { background-color: #2F3622; }
+#snow { background-color: #152731; }
+
+/* Videos */
+#videos .col-lg-6 { padding: 2em; }
 
 
 /* -----------------------------------------------------------------------------
@@ -75,16 +161,7 @@ BREAKPOINTS
 ----------------------------------------------------------------------------- */
 /* Large devices (large desktops, 1200px and up). */
 @media only screen and (min-width: 1200px) {
-    body {
-        font-size: 18px;
-    }
-    /* Full height window by using CSS Flexbox Layout. */
-    .flex-full-height {
-        display: flex;
-        height: auto;
-        min-height : 100%;
-        justify-content: center;
-    }
+    body        { font-size: 18px; }
     /*--------------------------------------------------------------------------
     HEADER
     --------------------------------------------------------------------------*/
@@ -114,95 +191,14 @@ BREAKPOINTS
 
 /* Small devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    .rightSide     { padding: 1em; }
-    .paddingBottom { padding-bottom: 1em; }
-    .paddingLeft   { padding-left: 0.5em; }
-    .paddingRight  { padding-right: 0.5em; }
+    .col-lg-12 { padding-right: 2em; padding-left: 2em; }
 }
 
 /* Extra small devices (phones, less than 768px) */
 @media only screen and (max-width: 768px) {
     body { text-align: center; }
-    h3   { padding-top: 1em; padding-bottom: 1em; font-size: 1.5em; }
-
-    .paddingBottom { padding-bottom: 1em; }
+    h3   { font-size: 1.5em; }
+    .col-lg-12 { padding-right: 1em; padding-left: 1em; }
+    /* Videos */
+    #videos .col-lg-6 { padding: 0 0 1em 0; }
 }
-
-/*------------------------------------------------------------------------------
-MAIN
-------------------------------------------------------------------------------*/
-.site-content { background-color: #1D2124; }
-.leftSide     { background-color: #1D2124; }
-.rightSide    { background-color: #FFC924; }
-
-/* Styling for DIVs of the main content. */
-/* BIGGEST DIVS
-------------------------------------------------------------------------------*/
-.leftSide li { margin: 1em 0; }
-.leftSide a {
-    padding: 0.5em;
-    font-weight: bold;
-    color: white;
-    transition: all 1s ease-in-out;
-}
-.leftSide a:hover {
-    color: black;
-    background-color: #eee;
-}
-/* SUB DIVS
-------------------------------------------------------------------------------*/
-.inner       { padding: 2em 0; }
-.inner-child { padding: 1em 0; }
-.inner-child h4, .inner-child p { text-align: center; }
-
-
-/*------------------------------------------------------------------------------
-FOOTER
-------------------------------------------------------------------------------*/
-#footer {
-    background-color: black;
-    color: white;
-    text-align: center;
-    align-items: center;
-    padding: 10em 0;
-}
-#footer a { color: white; }
-
-
-
-
-
-
-/*------------------------------------------------------------------------------
-Styling for COMPONENTS
-------------------------------------------------------------------------------*/
-.unrealengine       { color: #333 !important; }
-.unrealengine:hover { color: black; }
-.gimp               { color: darkslategray !important;; }
-.gimp:hover         { color: darkslategray; }
-#adobe              { color: brown !important;; }
-
-#adobe, .unrealengine, .gimp {
-    font-size: 1.6em;
-    font-weight: bold;
-    transition: all 0.5s ease-in-out;
-}
-
-
-
-.tooltip-rock + .tooltip > .tooltip-inner { background-color: #452E24; }
-.tooltip-rock + .tooltip > .tooltip-arrow { border-top-color: #452E24; }
-
-.tooltip-fire + .tooltip > .tooltip-inner { background-color: #2F3622; }
-.tooltip-fire + .tooltip > .tooltip-arrow { border-top-color: #2F3622; }
-
-.tooltip-snow + .tooltip > .tooltip-inner { background-color: #152731; }
-.tooltip-snow + .tooltip > .tooltip-arrow { border-top-color: #152731; }
-
-
-
-/* Characters */
-#rock, #fire, #snow { width: 100%; }
-#rock { background-color: #452E24; }
-#fire { background-color: #2F3622; }
-#snow { background-color: #152731; }

@@ -1,18 +1,7 @@
 /*!
  * Author: Xuan Do
- *
+ * v1.0
  */
-
-@import url('https://fonts.googleapis.com/css?family=BioRhyme+Expanded|Gugi|ZCOOL+KuaiLe');
-
-/* Timeline levels */
-#level-timeline {
-    max-width: 760px;
-    margin: auto;
-    margin-right: 2em;
-    margin-left: 2em;
-}
-
 #level-timeline p {
     position: relative;
     border-top: 2px dashed;
@@ -23,12 +12,10 @@
 }
 
 #level-timeline p:nth-child(1) { font-family: 'ZCOOL KuaiLe', cursive; }
-#level-timeline p:nth-child(2) { font-family: 'BioRhyme Expanded', serif; }
+#level-timeline p:nth-child(2) { font-family: 'Sofia', cursive; }
 #level-timeline p:nth-child(3) { font-family: 'Gugi', cursive; }
 
-.tooltip-rock { color: #1B2124; font-weight: bold; }
-.tooltip-fire { color: #74191E; font-weight: bold; }
-.tooltip-snow { color: #152731; font-weight: bold; }
+
 
 
 
